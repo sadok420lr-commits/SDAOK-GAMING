@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>الألعاب | SDAOK GAMING</title>
+  <title>ألعاب PS4 | SDAOK GAMING</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,13 +14,13 @@
 <header>
   <div class="nav">
 
-    <div class="logo">
+    <a class="logo" href="index.html">
       SDAOK GAMING
-    </div>
+    </a>
 
     <nav>
       <a href="index.html">الرئيسية 🏠</a>
-      <a href="games.html" class="active">الألعاب 🎮</a>
+      <a class="active" href="games.html">الألعاب 🎮</a>
       <a href="services.html">الخدمات 🔧</a>
       <a href="posts.html">المنشورات 📢</a>
       <a href="contact.html">تواصل معنا 📞</a>
@@ -29,71 +29,233 @@
   </div>
 </header>
 
+
 <main>
 
-  <section class="hero">
+  <!-- عنوان الصفحة -->
+  <section class="page-header">
 
-    <h1>🎮 الألعاب</h1>
+    <div class="game-icon">🎮</div>
 
-    <h2>عالم الألعاب بين يديك</h2>
+    <h1>ألعاب PS4</h1>
 
     <p>
-      اكتشف مختلف الألعاب والأخبار والتحديثات المتعلقة بعالم Gaming.
+      اكتشف مجموعة الألعاب المتوفرة على SDAOK GAMING
     </p>
 
   </section>
 
+
+  <!-- البحث -->
+  <section class="search-section">
+
+    <input
+      type="search"
+      id="gameSearch"
+      placeholder="🔎 ابحث عن لعبة..."
+      onkeyup="searchGames()"
+    >
+
+  </section>
+
+
+  <!-- الألعاب -->
   <section>
 
     <h2 class="section-title">
-      🎮 <span>أقسام الألعاب</span>
+      🎮 <span>PlayStation 4</span>
     </h2>
 
-    <div class="cards">
 
-      <div class="card">
-        <div class="icon">🎮</div>
-        <h3>PlayStation</h3>
-        <p>
-          ألعاب PS4 و PS5 وأخبار وتحديثات PlayStation.
-        </p>
-      </div>
+    <div class="games-grid" id="gamesGrid">
 
-      <div class="card">
-        <div class="icon">🟢</div>
-        <h3>Xbox</h3>
-        <p>
-          ألعاب Xbox Series S و Series X.
-        </p>
-      </div>
 
-      <div class="card">
-        <div class="icon">⚽</div>
-        <h3>Football</h3>
-        <p>
-          eFootball و FC وآخر أخبار ألعاب كرة القدم.
-        </p>
-      </div>
+      <!-- GTA V -->
+      <article class="game-card">
 
-      <div class="card">
-        <div class="icon">🔥</div>
-        <h3>Gaming</h3>
-        <p>
-          أحدث الألعاب والأخبار والتحديثات.
-        </p>
-      </div>
+        <div class="game-image gta">
+          🎮
+        </div>
+
+        <div class="game-content">
+
+          <span class="game-platform">
+            PS4
+          </span>
+
+          <h3>GTA V</h3>
+
+          <p>
+            Grand Theft Auto V
+          </p>
+
+          <a
+            href="game-gta-v.html"
+            class="game-btn"
+          >
+            عرض التفاصيل
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- eFootball -->
+      <article class="game-card">
+
+        <div class="game-image football">
+          ⚽
+        </div>
+
+        <div class="game-content">
+
+          <span class="game-platform">
+            PS4
+          </span>
+
+          <h3>eFootball</h3>
+
+          <p>
+            لعبة كرة القدم من Konami
+          </p>
+
+          <a
+            href="game-efootball.html"
+            class="game-btn"
+          >
+            عرض التفاصيل
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- FC -->
+      <article class="game-card">
+
+        <div class="game-image fc">
+          ⚽
+        </div>
+
+        <div class="game-content">
+
+          <span class="game-platform">
+            PS4
+          </span>
+
+          <h3>EA SPORTS FC</h3>
+
+          <p>
+            أحدث ألعاب كرة القدم
+          </p>
+
+          <a
+            href="game-fc.html"
+            class="game-btn"
+          >
+            عرض التفاصيل
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- لعبة 4 -->
+      <article class="game-card">
+
+        <div class="game-image">
+          🔥
+        </div>
+
+        <div class="game-content">
+
+          <span class="game-platform">
+            PS4
+          </span>
+
+          <h3>لعبة جديدة</h3>
+
+          <p>
+            سيتم إضافة معلومات اللعبة هنا
+          </p>
+
+          <a
+            href="#"
+            class="game-btn"
+          >
+            عرض التفاصيل
+          </a>
+
+        </div>
+
+      </article>
+
 
     </div>
 
   </section>
 
+
+  <!-- العودة -->
+  <section class="back-section">
+
+    <a href="index.html" class="btn">
+      🏠 العودة للرئيسية
+    </a>
+
+  </section>
+
 </main>
 
+
 <footer>
+
   SDAOK GAMING © 2026
+
   <br>
+
   جميع الحقوق محفوظة
+
 </footer>
+
+
+<script>
+
+function searchGames() {
+
+  let input =
+    document
+    .getElementById("gameSearch")
+    .value
+    .toLowerCase();
+
+  let games =
+    document
+    .querySelectorAll(".game-card");
+
+  games.forEach(function(game) {
+
+    let text =
+      game.innerText.toLowerCase();
+
+    if (text.includes(input)) {
+
+      game.style.display = "";
+
+    } else {
+
+      game.style.display = "none";
+
+    }
+
+  });
+
+}
+
+</script>
 
 </body>
 </html>
