@@ -1,1 +1,466 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>SDAOK GAMING</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080b12;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0d111b;
+      border-bottom: 1px solid #202838;
+      padding: 18px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #7c5cff;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #8b72ff;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 35px auto;
+      padding: 55px 25px;
+      text-align: center;
+      background: linear-gradient(135deg, #11182a, #171126);
+      border: 1px solid #252d40;
+      border-radius: 22px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #8b72ff;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #b8becb;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      background: #7055e8;
+      font-weight: bold;
+    }
+
+    .btn.secondary {
+      background: #171d2b;
+      border: 1px solid #30394d;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .section-title span {
+      color: #7c5cff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: #0f141f;
+      border: 1px solid #252d3d;
+      border-radius: 16px;
+      padding: 22px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #7055e8;
+    }
+
+    .icon {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #aeb5c2;
+      font-size: 14px;
+    }
+
+    .post {
+      background: #0f141f;
+      border: 1px solid #252d3d;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .post h3 {
+      color: #8b72ff;
+      margin-bottom: 8px;
+    }
+
+    .post small {
+      color: #777f90;
+    }
+
+    .contact {
+      text-align: center;
+      background: #101725;
+      border: 1px solid #252d3d;
+      border-radius: 18px;
+      padding: 35px 20px;
+    }
+
+    .contact p {
+      color: #b8becb;
+      margin: 10px 0 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 25px 20px;
+      text-align: center;
+      background: #05070c;
+      border-top: 1px solid #202838;
+      color: #777f90;
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        margin: 20px 12px;
+        padding: 40px 18px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      section {
+        padding: 0 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- القائمة -->
+  <header>
+    <div class="nav">
+
+      <div class="logo">
+        SDAOK GAMING
+      </div>
+
+      <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#games">الألعاب</a>
+        <a href="#services">الخدمات</a>
+        <a href="#posts">المنشورات</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- الرئيسية -->
+  <main id="home">
+
+    <div class="hero">
+
+      <h1>SDAOK GAMING</h1>
+
+      <h2>عالم الألعاب وصيانة أجهزة الألعاب 🎮</h2>
+
+      <p>
+        مرحبًا بكم في SDAOK GAMING.
+        هنا تجد أخبار الألعاب، المنشورات، الخدمات،
+        وكل ما يتعلق بعالم أجهزة الألعاب.
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="#games">استكشف الموقع</a>
+
+        <a class="btn secondary" href="#contact">
+          تواصل معنا
+        </a>
+      </div>
+
+    </div>
+
+
+    <!-- الألعاب -->
+    <section id="games">
+
+      <h2 class="section-title">
+        🎮 <span>الألعاب</span>
+      </h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🎮</div>
+          <h3>PlayStation</h3>
+          <p>
+            أخبار ومعلومات وخدمات متعلقة بأجهزة PlayStation.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">⚽</div>
+          <h3>ألعاب كرة القدم</h3>
+          <p>
+            أخبار وتحديثات ومعلومات ألعاب كرة القدم.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔥</div>
+          <h3>ألعاب متنوعة</h3>
+          <p>
+            آخر الأخبار والمعلومات حول الألعاب المختلفة.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- الخدمات -->
+    <section id="services">
+
+      <h2 class="section-title">
+        🔧 <span>خدماتنا</span>
+      </h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🛠️</div>
+          <h3>صيانة PS4</h3>
+          <p>
+            تنظيف الجهاز، تغيير المعجون الحراري
+            وخدمات الصيانة المختلفة.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🎮</div>
+          <h3>صيانة يد التحكم</h3>
+          <p>
+            فحص وإصلاح مشاكل يد التحكم
+            والأنالوج.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💾</div>
+          <h3>خدمات النظام</h3>
+          <p>
+            خدمات متعلقة بالنظام والتحديثات
+            وإدارة الملفات.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- المنشورات -->
+    <section id="posts">
+
+      <h2 class="section-title">
+        📢 <span>آخر المنشورات</span>
+      </h2>
+
+      <div class="post">
+
+        <h3>مرحبًا بكم في SDAOK GAMING 🎮</h3>
+
+        <p>
+          تم إطلاق موقع SDAOK GAMING ليكون مساحة
+          لنشر أخبار الألعاب والخدمات والمنشورات الجديدة.
+        </p>
+
+        <small>
+          منشور جديد
+        </small>
+
+      </div>
+
+
+      <div class="post">
+
+        <h3>خدمات صيانة PS4 🔧</h3>
+
+        <p>
+          نوفر خدمات صيانة وتنظيف أجهزة PS4
+          مع الاهتمام بالجودة.
+        </p>
+
+        <small>
+          SDAOK GAMING
+        </small>
+
+      </div>
+
+    </section>
+
+
+    <!-- الإعلانات -->
+    <section>
+
+      <h2 class="section-title">
+        📣 <span>الإعلانات</span>
+      </h2>
+
+      <div class="card">
+
+        <h3>تابع الموقع باستمرار</h3>
+
+        <p>
+          سيتم نشر الأخبار والمنشورات الجديدة
+          والإعلانات هنا بشكل مستمر.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- التواصل -->
+    <section id="contact">
+
+      <div class="contact">
+
+        <h2>📞 تواصل معنا</h2>
+
+        <p>
+          للاستفسار عن الخدمات أو التواصل معنا،
+          يمكنك استخدام WhatsApp.
+        </p>
+
+        <!-- ضع رقم واتساب الخاص بك هنا لاحقًا -->
+        <a
+          class="btn"
+          href="#"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- الفوتر -->
+  <footer>
+
+    © 2026 SDAOK GAMING
+
+    <br>
+
+    جميع الحقوق محفوظة
+
+  </footer>
+
+</body>
+</html>
