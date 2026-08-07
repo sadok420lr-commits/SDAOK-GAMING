@@ -5,245 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SDAOK GAMING</title>
+  <meta name="description" content="SDAOK GAMING - عالم الألعاب وصيانة أجهزة الألعاب">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #080b12;
-      color: #ffffff;
-      line-height: 1.7;
-    }
-
-    header {
-      background: #0d111b;
-      border-bottom: 1px solid #202838;
-      padding: 18px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 15px;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #7c5cff;
-      letter-spacing: 1px;
-    }
-
-    nav {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #8b72ff;
-    }
-
-    .hero {
-      max-width: 1100px;
-      margin: 35px auto;
-      padding: 55px 25px;
-      text-align: center;
-      background: linear-gradient(135deg, #11182a, #171126);
-      border: 1px solid #252d40;
-      border-radius: 22px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      color: #8b72ff;
-      margin-bottom: 12px;
-    }
-
-    .hero h2 {
-      font-size: 22px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      color: #b8becb;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .buttons {
-      margin-top: 25px;
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 22px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: white;
-      background: #7055e8;
-      font-weight: bold;
-    }
-
-    .btn.secondary {
-      background: #171d2b;
-      border: 1px solid #30394d;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: 35px auto;
-      padding: 0 20px;
-    }
-
-    .section-title {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #ffffff;
-    }
-
-    .section-title span {
-      color: #7c5cff;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .card {
-      background: #0f141f;
-      border: 1px solid #252d3d;
-      border-radius: 16px;
-      padding: 22px;
-      transition: 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: #7055e8;
-    }
-
-    .icon {
-      font-size: 35px;
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      color: #aeb5c2;
-      font-size: 14px;
-    }
-
-    .post {
-      background: #0f141f;
-      border: 1px solid #252d3d;
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 15px;
-    }
-
-    .post h3 {
-      color: #8b72ff;
-      margin-bottom: 8px;
-    }
-
-    .post small {
-      color: #777f90;
-    }
-
-    .contact {
-      text-align: center;
-      background: #101725;
-      border: 1px solid #252d3d;
-      border-radius: 18px;
-      padding: 35px 20px;
-    }
-
-    .contact p {
-      color: #b8becb;
-      margin: 10px 0 20px;
-    }
-
-    footer {
-      margin-top: 50px;
-      padding: 25px 20px;
-      text-align: center;
-      background: #05070c;
-      border-top: 1px solid #202838;
-      color: #777f90;
-      font-size: 13px;
-    }
-
-    @media (max-width: 800px) {
-      .cards {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .hero h1 {
-        font-size: 38px;
-      }
-
-      nav {
-        display: none;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        margin: 20px 12px;
-        padding: 40px 18px;
-      }
-
-      .hero h1 {
-        font-size: 32px;
-      }
-
-      section {
-        padding: 0 12px;
-      }
-    }
-  </style>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- القائمة -->
-  <header>
+  <!-- HEADER -->
+  <header class="header">
     <div class="nav">
 
-      <div class="logo">
-        SDAOK GAMING
-      </div>
+      <a href="#home" class="logo">
+        SDAOK <span>GAMING</span>
+      </a>
 
       <nav>
         <a href="#home">الرئيسية</a>
@@ -257,166 +32,328 @@
   </header>
 
 
-  <!-- الرئيسية -->
+  <!-- HERO -->
   <main id="home">
 
-    <div class="hero">
+    <section class="hero">
 
-      <h1>SDAOK GAMING</h1>
+      <div class="hero-content">
 
-      <h2>عالم الألعاب وصيانة أجهزة الألعاب 🎮</h2>
+        <div class="badge">🎮 SDAOK GAMING</div>
 
-      <p>
-        مرحبًا بكم في SDAOK GAMING.
-        هنا تجد أخبار الألعاب، المنشورات، الخدمات،
-        وكل ما يتعلق بعالم أجهزة الألعاب.
-      </p>
+        <h1>
+          عالم الألعاب
+          <span>بين يديك</span>
+        </h1>
 
-      <div class="buttons">
-        <a class="btn" href="#games">استكشف الموقع</a>
+        <p>
+          أخبار الألعاب، الألعاب الجديدة، الخدمات،
+          صيانة أجهزة الألعاب وكل ما يخص عالم Gaming.
+        </p>
 
-        <a class="btn secondary" href="#contact">
-          تواصل معنا
+        <div class="buttons">
+
+          <a href="#games" class="btn">
+            🎮 استكشف الألعاب
+          </a>
+
+          <a href="#services" class="btn secondary">
+            🔧 خدماتنا
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- QUICK CATEGORIES -->
+    <section class="categories">
+
+      <div class="category">
+        <div class="category-icon">🎮</div>
+        <h3>PlayStation</h3>
+        <p>PS4 • PS5</p>
+      </div>
+
+      <div class="category">
+        <div class="category-icon">🟢</div>
+        <h3>Xbox</h3>
+        <p>Series S • Series X</p>
+      </div>
+
+      <div class="category">
+        <div class="category-icon">⚽</div>
+        <h3>Football</h3>
+        <p>eFootball • FC</p>
+      </div>
+
+      <div class="category">
+        <div class="category-icon">🔥</div>
+        <h3>Gaming</h3>
+        <p>أحدث الألعاب</p>
+      </div>
+
+    </section>
+
+
+    <!-- GAMES -->
+    <section id="games">
+
+      <div class="section-header">
+        <div>
+          <span class="small-title">GAME CENTER</span>
+
+          <h2>
+            🎮 أحدث <span>الألعاب</span>
+          </h2>
+        </div>
+
+        <a href="#games" class="view-all">
+          عرض الكل ←
         </a>
       </div>
 
-    </div>
-
-
-    <!-- الألعاب -->
-    <section id="games">
-
-      <h2 class="section-title">
-        🎮 <span>الألعاب</span>
-      </h2>
 
       <div class="cards">
 
-        <div class="card">
-          <div class="icon">🎮</div>
-          <h3>PlayStation</h3>
-          <p>
-            أخبار ومعلومات وخدمات متعلقة بأجهزة PlayStation.
-          </p>
-        </div>
+        <article class="game-card">
 
-        <div class="card">
-          <div class="icon">⚽</div>
-          <h3>ألعاب كرة القدم</h3>
-          <p>
-            أخبار وتحديثات ومعلومات ألعاب كرة القدم.
-          </p>
-        </div>
+          <div class="game-image">
+            🎮
+          </div>
 
-        <div class="card">
-          <div class="icon">🔥</div>
-          <h3>ألعاب متنوعة</h3>
-          <p>
-            آخر الأخبار والمعلومات حول الألعاب المختلفة.
-          </p>
-        </div>
+          <div class="game-content">
+
+            <span class="tag">PS4</span>
+
+            <h3>PlayStation Games</h3>
+
+            <p>
+              أحدث أخبار ومعلومات ألعاب PlayStation.
+            </p>
+
+            <a href="#contact" class="card-btn">
+              التفاصيل
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="game-card">
+
+          <div class="game-image">
+            ⚽
+          </div>
+
+          <div class="game-content">
+
+            <span class="tag">SPORT</span>
+
+            <h3>Football Games</h3>
+
+            <p>
+              أخبار وتحديثات ألعاب كرة القدم.
+            </p>
+
+            <a href="#contact" class="card-btn">
+              التفاصيل
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="game-card">
+
+          <div class="game-image">
+            🔥
+          </div>
+
+          <div class="game-content">
+
+            <span class="tag">GAMING</span>
+
+            <h3>ألعاب متنوعة</h3>
+
+            <p>
+              اكتشف أحدث الألعاب والمنشورات.
+            </p>
+
+            <a href="#contact" class="card-btn">
+              التفاصيل
+            </a>
+
+          </div>
+
+        </article>
 
       </div>
 
     </section>
 
 
-    <!-- الخدمات -->
+    <!-- SERVICES -->
     <section id="services">
 
-      <h2 class="section-title">
-        🔧 <span>خدماتنا</span>
-      </h2>
+      <div class="section-header">
+
+        <div>
+          <span class="small-title">OUR SERVICES</span>
+
+          <h2>
+            🔧 خدمات <span>SDAOK</span>
+          </h2>
+        </div>
+
+      </div>
+
 
       <div class="cards">
 
-        <div class="card">
-          <div class="icon">🛠️</div>
+        <article class="service-card">
+
+          <div class="service-icon">
+            🛠️
+          </div>
+
           <h3>صيانة PS4</h3>
+
           <p>
             تنظيف الجهاز، تغيير المعجون الحراري
-            وخدمات الصيانة المختلفة.
+            وفحص مشاكل الجهاز.
           </p>
-        </div>
 
-        <div class="card">
-          <div class="icon">🎮</div>
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            🎮
+          </div>
+
           <h3>صيانة يد التحكم</h3>
-          <p>
-            فحص وإصلاح مشاكل يد التحكم
-            والأنالوج.
-          </p>
-        </div>
 
-        <div class="card">
-          <div class="icon">💾</div>
-          <h3>خدمات النظام</h3>
           <p>
-            خدمات متعلقة بالنظام والتحديثات
-            وإدارة الملفات.
+            فحص وإصلاح مشاكل الأنالوج
+            والدريفت وأعطال اليد.
           </p>
-        </div>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            💾
+          </div>
+
+          <h3>خدمات النظام</h3>
+
+          <p>
+            خدمات النظام والتحديثات وإدارة
+            الملفات الخاصة بأجهزة الألعاب.
+          </p>
+
+        </article>
 
       </div>
 
     </section>
 
 
-    <!-- المنشورات -->
+    <!-- POSTS -->
     <section id="posts">
 
-      <h2 class="section-title">
-        📢 <span>آخر المنشورات</span>
-      </h2>
+      <div class="section-header">
 
-      <div class="post">
+        <div>
+          <span class="small-title">LATEST NEWS</span>
 
-        <h3>مرحبًا بكم في SDAOK GAMING 🎮</h3>
-
-        <p>
-          تم إطلاق موقع SDAOK GAMING ليكون مساحة
-          لنشر أخبار الألعاب والخدمات والمنشورات الجديدة.
-        </p>
-
-        <small>
-          منشور جديد
-        </small>
+          <h2>
+            📢 آخر <span>المنشورات</span>
+          </h2>
+        </div>
 
       </div>
 
 
-      <div class="post">
+      <article class="post">
 
-        <h3>خدمات صيانة PS4 🔧</h3>
+        <div class="post-icon">
+          🎮
+        </div>
 
-        <p>
-          نوفر خدمات صيانة وتنظيف أجهزة PS4
-          مع الاهتمام بالجودة.
-        </p>
+        <div>
 
-        <small>
+          <span class="post-date">
+            SDAOK GAMING
+          </span>
+
+          <h3>
+            مرحبًا بكم في موقع SDAOK GAMING
+          </h3>
+
+          <p>
+            تم إطلاق موقع SDAOK GAMING ليكون
+            مساحة لنشر أخبار الألعاب والخدمات
+            والمنشورات الجديدة.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article class="post">
+
+        <div class="post-icon">
+          🔧
+        </div>
+
+        <div>
+
+          <span class="post-date">
+            خدمات الصيانة
+          </span>
+
+          <h3>
+            خدمات صيانة أجهزة PS4
+          </h3>
+
+          <p>
+            نوفر خدمات تنظيف وصيانة أجهزة PS4
+            مع الاهتمام بجودة العمل.
+          </p>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- ADVERTISEMENT -->
+    <section class="advertisement">
+
+      <div>
+
+        <span class="small-title">
           SDAOK GAMING
-        </small>
+        </span>
 
-      </div>
-
-    </section>
-
-
-    <!-- الإعلانات -->
-    <section>
-
-      <h2 class="section-title">
-        📣 <span>الإعلانات</span>
-      </h2>
-
-      <div class="card">
-
-        <h3>تابع الموقع باستمرار</h3>
+        <h2>
+          📣 تابع الموقع باستمرار
+        </h2>
 
         <p>
-          سيتم نشر الأخبار والمنشورات الجديدة
-          والإعلانات هنا بشكل مستمر.
+          سيتم إضافة ألعاب ومنشورات وإعلانات
+          جديدة بشكل مستمر.
         </p>
 
       </div>
@@ -424,24 +361,32 @@
     </section>
 
 
-    <!-- التواصل -->
+    <!-- CONTACT -->
     <section id="contact">
 
       <div class="contact">
 
-        <h2>📞 تواصل معنا</h2>
+        <div class="contact-icon">
+          📞
+        </div>
+
+        <h2>
+          تواصل معنا
+        </h2>
 
         <p>
-          للاستفسار عن الخدمات أو التواصل معنا،
-          يمكنك استخدام WhatsApp.
+          للاستفسار عن الخدمات أو الألعاب،
+          يمكنك التواصل معنا عبر WhatsApp.
         </p>
 
-        <!-- ضع رقم واتساب الخاص بك هنا لاحقًا -->
+        <!-- ضع رقم واتساب مكان 213XXXXXXXXX -->
+
         <a
-          class="btn"
-          href="#"
+          class="btn whatsapp"
+          href="https://wa.me/213XXXXXXXXX"
+          target="_blank"
         >
-          WhatsApp
+          💬 تواصل عبر WhatsApp
         </a>
 
       </div>
@@ -451,16 +396,25 @@
   </main>
 
 
-  <!-- الفوتر -->
+  <!-- FOOTER -->
   <footer>
 
-    © 2026 SDAOK GAMING
+    <div class="footer-logo">
+      SDAOK <span>GAMING</span>
+    </div>
 
-    <br>
+    <p>
+      عالم الألعاب والخدمات 🎮
+    </p>
 
-    جميع الحقوق محفوظة
+    <div class="footer-line"></div>
+
+    <small>
+      © 2026 SDAOK GAMING — جميع الحقوق محفوظة
+    </small>
 
   </footer>
+
 
 </body>
 </html>
