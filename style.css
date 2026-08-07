@@ -712,3 +712,290 @@ footer {
         padding: 40px 15px;
     }
 }
+/* =========================
+   صفحة الألعاب
+========================= */
+
+.page-header {
+  max-width: 1100px;
+  margin: 40px auto 25px;
+  padding: 45px 20px;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #102719,
+      #080b12 70%
+    );
+
+  border: 1px solid #27323d;
+  border-radius: 22px;
+}
+
+.page-header .game-icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.page-header h1 {
+  color: #8b72ff;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #aeb5c2;
+  font-size: 17px;
+}
+
+
+/* البحث */
+
+.search-section {
+  max-width: 700px;
+  margin: 25px auto 40px;
+  padding: 0 20px;
+}
+
+#gameSearch {
+  width: 100%;
+  padding: 15px 20px;
+
+  background: #101621;
+  color: white;
+
+  border: 1px solid #30394d;
+  border-radius: 12px;
+
+  outline: none;
+
+  font-size: 16px;
+  text-align: right;
+}
+
+#gameSearch:focus {
+  border-color: #7c5cff;
+  box-shadow: 0 0 15px #7c5cff33;
+}
+
+
+/* شبكة الألعاب */
+
+.games-grid {
+
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+/* بطاقة اللعبة */
+
+.game-card {
+
+  overflow: hidden;
+
+  background: #0f141f;
+
+  border: 1px solid #252d3d;
+
+  border-radius: 18px;
+
+  transition: 0.25s;
+}
+
+.game-card:hover {
+
+  transform: translateY(-6px);
+
+  border-color: #7c5cff;
+
+  box-shadow:
+    0 10px 30px #00000055;
+}
+
+
+/* صورة اللعبة */
+
+.game-image {
+
+  height: 190px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 75px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #171d2b,
+      #0b1118
+    );
+}
+
+.game-image.gta {
+  background:
+    linear-gradient(
+      135deg,
+      #241b3b,
+      #0b1118
+    );
+}
+
+.game-image.football {
+  background:
+    linear-gradient(
+      135deg,
+      #12341f,
+      #08120c
+    );
+}
+
+.game-image.fc {
+  background:
+    linear-gradient(
+      135deg,
+      #15243d,
+      #080c14
+    );
+}
+
+
+/* محتوى البطاقة */
+
+.game-content {
+
+  padding: 20px;
+
+  text-align: center;
+}
+
+.game-platform {
+
+  display: inline-block;
+
+  padding: 5px 12px;
+
+  margin-bottom: 8px;
+
+  background: #7c5cff22;
+
+  color: #9a86ff;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+}
+
+.game-content h3 {
+
+  font-size: 23px;
+
+  margin-bottom: 7px;
+}
+
+.game-content p {
+
+  color: #aeb5c2;
+
+  font-size: 14px;
+
+  margin-bottom: 18px;
+}
+
+
+/* زر التفاصيل */
+
+.game-btn {
+
+  display: block;
+
+  padding: 11px;
+
+  background: #7c5cff;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+.game-btn:hover {
+
+  background: #927dff;
+
+  transform: scale(1.02);
+}
+
+
+/* زر العودة */
+
+.back-section {
+
+  text-align: center;
+
+  margin: 45px 0;
+}
+
+
+/* الهاتف */
+
+@media (max-width: 800px) {
+
+  .games-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .games-grid {
+
+    grid-template-columns: 1fr;
+
+    padding: 0 15px;
+
+  }
+
+  .page-header {
+
+    margin: 25px 12px;
+
+    padding: 35px 15px;
+
+  }
+
+  .page-header h1 {
+
+    font-size: 34px;
+
+  }
+
+  .game-image {
+
+    height: 180px;
+
+  }
+
+}
